@@ -1,30 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Formularios</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/jpeg" href="Assets/icon.png">
+    <title>Ezequiel Abadie</title>
 </head>
 <body>
-    <h1>Ezequiel Abadie</h1>
-    <h2>Estudiante de Ingenieria en sistemas de información</h2>
-    <p>Edad 20 años</p>
-    <p>Hijo único</p>
-    <p>Vivo en Mendoza</p>
-    <p>Soy del Tomba</p>
-    <p>Me gusta el futbol y los autos</p>
-    <p>Mi color favorito es el azul</p>
-    <p>Mi comida favorita es el asado</p>
-    <p>Mi bebida favorita es la sprite</p>
-    <p>Mi materia favorita es desarrollo de software</p>
-    <p>Manejo una ecosport naranja</p>
-    <p>Mi sueño es </p>
-    <p>Mi hobbie es andar en bici</p>
+    <header>
+        <a href="#home" class="header-btn">Home</a>
+        <a href="#about" class="header-btn">About</a>
+        <a href="#projects" class="header-btn">Projects</a>
+        <a href="#contact" class="header-btn">Contact</a>
+        <a href="Assets\CV.pdf" class="header-btn">Resume</a>
+    </header>
+
+<div class = "noHeader" id="home">
+    <h1 class="Titulo">Ezequiel Abadie</h1>
+    <h3 class="Descripcion" >Actualmente cursando el tercer año de Ingenieria en sistemas de información, en la Universidad Tecnológica Nacional (UTN)</h2>
     
+
+
+    <img src="Assets/Ezequiel_Foto.jpeg" alt="Foto de Ezequiel" width="100%" >
+    
+    <h2 id="about">Quién es Ezequiel?</h2>
+    <div class="Sobre_mi">
+    <h3>Sobre mí</h3>
+    <p>Soy de Mendoza y desde chico me acompaña una gran pasión 
+        por el fútbol, en especial por el Tomba. 
+        Me encantan los autos y tengo una especial relación con mi EcoSport 
+        naranja, que se ha convertido en parte de mis aventuras cotidianas. 
+        También disfruto mucho andar en bicicleta, ya que me permite desconectarme 
+        y relajarme.
+        En lo académico, mi materia preferida es Desarrollo de Software, 
+        un área en la que me siento motivado a crecer y en la que imagino 
+        gran parte de mi futuro profesional. Con estas pasiones y motivaciones,
+        voy construyendo mi camino personal y persiguiendo mis sueños.</p> 
+</div>
+
+<h3 id="projects">Proyectos</h3>
+<p></p>
+
+<h3 id="contact">Contactame</h3>
+<p>Estoy abierto a proyectos que aporten valor y me ayuden a desarrollarme profesionalmente.</p>
+
+<form class="contact-form" action="#" method="POST">
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="tu-email@ejemplo.com" required />
+    </div>
+    
+    <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="¿En qué puedo ayudarte?" rows="5" required></textarea>
+    </div>
+    
+    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+</form>
+
     <h3>Información de contacto </h3>
     <p>Teléfono: 2613618060</p>
-    <p>Email: abadieezequiel@gmail.com
-    <p>LinkedIn: https://www.linkedin.com/in/ezequiel-abadie-2b4b98223/</p>
-
-
-
+    <p>• Email: abadieezequiel@gmail.com</p>
+    
+    <div class="Redes_Sociales">
+        <a href="https://www.linkedin.com/in/ezequielabadie" target="_blank">
+            <img src="Assets/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/eze.abadie/" target="_blank">
+            <img src="Assets/instagram.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://github.com/zezex04" target="_blank">
+            <img src="Assets/github.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://x.com/eze_abadie" target="_blank">
+            <img src="Assets/x.jpg" alt="x" class="social-icon">
+        </a>
+    </div>
+</div>
 </body>
 </html>
